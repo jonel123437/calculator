@@ -5,21 +5,11 @@ body {
     height: 100vh;
 }
 
-#keys {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    padding: 25px;
-}
-
-button {
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 3rem;
-    font-weight: bold;
-    border: none;
+#calculator {
+    overflow: hidden;
+    border-radius: 20px;
+    max-width: 500px;
+    background-color: #1C1C1C;
 }
 
 #display {
@@ -28,13 +18,38 @@ button {
     font-size: 5rem;
     text-align: left;
     border: none;
-    background-color: gray;
+    background-color: #1C1C1C;
     color: white;
 }
 
-#calculator {
-    background-color: black;
-    border-radius: 20px;
-    max-width: 500px;
-    overflow: hidden;
+button:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+.operand {
+    background-color: rgb(255, 166, 0);
+}
+
+.operand:hover {
+    background-color: rgb(255, 191, 73);
+}
+
+button {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    font-size: 3rem;
+    border: none;
+    background-color: #505050;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
